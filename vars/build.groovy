@@ -1,5 +1,3 @@
 def call(String ProjectName, String ImageTag){
-  withCredentials([usernamePassword(credentialsId: 'dockerHubcreds', usernameVariable: 'dockerHubUser')]) {
-  }
-  sh "sudo docker build -t ${dockerHubUser}/${ProjectName}:${ImageTag} ."
+  sh "sudo docker build -t adityagaikwad6430/${ProjectName}:${ImageTag} ."
 }
