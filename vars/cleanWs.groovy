@@ -1,3 +1,3 @@
-def call(){
-  sh"docker rmi $(docker images -aq)"
+def call() {
+    sh "docker image prune -af"
 }
