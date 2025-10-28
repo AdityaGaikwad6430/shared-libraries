@@ -1,3 +1,3 @@
 def call() {
-    sh "docker image prune -af"
+    sh "sudo docker image prune -af"
 }
